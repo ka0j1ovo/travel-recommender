@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>旅行城市推荐器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>旅行城市推荐器</h1>
+    <p>根据需求者的偏好，从我去过的城市里推荐目的地。左侧设置「硬性条件」和每个维度的「看重程度 + 偏好」，右侧实时排序。</p>
+  </header>
+
+  <main>
+    <aside class="panel">
+      <div class="panel-title">硬性条件（一票否决）</div>
+      <div id="hardFilters"></div>
+
+      <div class="panel-title">偏好与看重程度</div>
+      <div id="dims"></div>
+
+      <button id="reset" class="reset">重置所有设置</button>
+    </aside>
+
+    <section class="results-panel">
+      <div id="summary" class="summary"></div>
+      <div id="results" class="results"></div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
