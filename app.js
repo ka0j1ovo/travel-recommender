@@ -61,8 +61,7 @@ var DAY_STOPS = [
 // —— 点击卡片跳转 ——
 var JUMP_OPTIONS = [
   { label: "不跳转", value: "none" },
-  { label: "跳转百度（电脑推荐）", value: "baidu" },
-  { label: "跳转小红书（推荐手机装有小红书）", value: "xhs" }
+  { label: "跳转百度（电脑推荐）", value: "baidu" }
 ];
 var jumpMode = "none";
 
@@ -976,8 +975,6 @@ function render() {
 function jumpToSearch(name) {
   if (jumpMode === "baidu") {
     window.open("https://www.baidu.com/s?wd=" + encodeURIComponent(name + " 景点"), "_blank");
-  } else if (jumpMode === "xhs") {
-    window.open("https://www.bing.com/search?q=" + encodeURIComponent("site:xiaohongshu.com " + name + " 攻略"), "_blank");
   }
 }
 
