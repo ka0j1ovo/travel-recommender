@@ -9,27 +9,50 @@
 <body>
   <header>
     <h1>旅行城市推荐器</h1>
-    <p>根据需求者的偏好，从我去过的城市里推荐目的地。左侧设置「硬性条件」和每个维度的「看重程度 + 偏好」，右侧实时排序。</p>
   </header>
 
   <main>
-    <aside class="panel">
-      <div class="panel-title">硬性条件（一票否决）</div>
-      <div id="hardFilters"></div>
+    <aside class="sidebar">
+      <section class="bento">
+        <div class="bento-title">我想看到的景色</div>
+        <div id="types"></div>
+      </section>
 
-      <div class="panel-title">偏好与看重程度</div>
-      <div id="dims"></div>
+      <section class="bento">
+        <div class="bento-title">我的行程</div>
+        <div id="trip"></div>
+      </section>
+
+      <section class="bento">
+        <div class="bento-title">我的旅行喜好</div>
+        <div id="prefs"></div>
+      </section>
+
+      <section class="bento">
+        <div class="bento-title">我想征求建议</div>
+        <div id="author"></div>
+      </section>
 
       <button id="reset" class="reset">重置所有设置</button>
     </aside>
 
-    <section class="results-panel">
-      <div id="summary" class="summary"></div>
-      <div id="results" class="results"></div>
-    </section>
+    <div class="right-col">
+      <div class="map-col">
+        <div id="china-map"></div>
+      </div>
+
+      <section class="results-panel">
+        <div id="summary" class="summary"></div>
+        <div id="jumpmode" class="jumpmode"></div>
+        <div id="results" class="results"></div>
+      </section>
+    </div>
   </main>
 
   <script src="data.js"></script>
+  <script src="echarts.min.js"></script>
+  <script src="china.js"></script>
+  <script src="geo.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

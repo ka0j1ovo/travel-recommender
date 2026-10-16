@@ -1,0 +1,3 @@
+# 抓取/生成的中间产物（可由 _crawl_geo.ps1 重新生成）
+raw_areas.json
+_geo_tmp/
