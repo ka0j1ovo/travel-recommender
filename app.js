@@ -766,7 +766,7 @@ function refreshMap(scored) {
     return {
       name: r.name,
       value: [r.lng, r.lat],
-      symbolSize: isTop ? 9 : 5,
+      symbolSize: isTop ? 11 : 7,
       label: isTop ? { show: true, position: "top", formatter: "{b}", color: "#1d1d1f", fontWeight: 700, fontSize: 10 } : { show: false }
     };
   });
@@ -775,7 +775,7 @@ function refreshMap(scored) {
     name: "城市",
     type: "scatter",
     coordinateSystem: "geo",
-    symbolSize: 5,
+    symbolSize: 7,
     itemStyle: { color: "#0071e3", borderColor: "#fff", borderWidth: 1 },
     label: { show: false },
     data: dotData
